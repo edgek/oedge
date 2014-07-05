@@ -1,0 +1,77 @@
+body {font-size: .75em; font-family: sans-serif; margin: 0px; }
+fieldset {border: none;}
+select {width: 8em; margin: 0px; padding: 0; height: 2em;}
+label, input {display: inline-block; width: 8em; height: 2em;}
+ul {list-style-type: none; margin: 0; padding: 0;}
+li {padding: .25em;}
+li a {color: black; text-decoration: none; }
+li a:hover {text-decoration: underline;}
+input, select {outline: none; border: 1px solid #dddddd;}
+input, select, textarea {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+#header {
+	width: 100%; 
+	padding: 1em; 
+	background: black; 
+	color: white;
+}
+#container-left {float: left; width: 62%;}
+#container-right {float: right; width: 38%;}
+#tabs-pos {
+	margin: 1em .5em 1em 1em; 
+	background: none; 
+	min-height: 130px; 
+	/*padding-bottom: 1em;*/
+}
+
+#tabs-ctrl {
+	margin: 1em 1em 1em .5em; 
+	background: none; 
+	/*padding-bottom: 1em; */
+	text-align: right;
+}
+#tabs-ctrl .sliders {margin-bottom: 1em;}
+#tabs-ctrl .spinners {width: 4em;}
+#position-tbl-div {overflow: auto; display: none;}
+#grid-tbl-div {min-height: 264px; overflow: auto;}
+#chart-div {height: 225px;}
+
+
+.test-border {border: 1px solid black; padding: 0%;}
+.box {border: 1px solid #dddddd; border-radius: 6px; padding: 1em;}
+.box.left {margin: 1em .5em 1em 1em;}
+.box.right {margin: 1em 1em 1em .5em;}
+
+
+.clearfix:after {content: " "; display: block; height: 0; clear: both;} 
+.inline-block {display: inline-block; }
+
+.ui-widget {font-size: 1em; font-family: sans-serif;}
+.ui-tabs {border-color: #dddddd;}
+.ui-tabs .ui-tabs-panel {}
+.ui-tabs .ui-tabs-nav {border-color: #dddddd; font-family: sans-serif;}
+.ui-tabs .ui-tabs-active {background: white;}
+.ui-tabs .ui-tabs-active a {outline: none;}
+.ui-spinner-input {margin-top: 0; margin-bottom: 0;}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {font-family: sans-serif;}
+
+
+
+
+
+.ui-tabs-panel.ui-widget-content {padding: 1em;}
+
+
+.dygraph-axis-label {font-size: .75em;}
+.dygraph-label.dygraph-xlabel {font-size: 12px;}
+.dygraph-label.dygraph-ylabel {font-size: 12px;}
+/*#chart-div div {font-size: 1em;}*/
+/*.ui-state-error {border: 2px solid red;}
+*/
+
+

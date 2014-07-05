@@ -1,0 +1,14 @@
+.oedge-bg-color {background-color: #f8f7f6;}
+.oedge-table {width: 100%; border-collapse: collapse; }
+.oedge-thead {border-bottom: 2px solid #dddddd;}
+.oedge-tbody tr {border-top: 1px solid #dddddd;}
+.oedge-tbody tr:hover td {background-color: #ffffcc; }
+.oedge-border-r-dashed {border-right: 1px dashed #dddddd;}
+.oedge-border-r-solid {border-right: 1px solid #dddddd;}
+
+.oedge-tbody td, .oedge-thead th {padding: .25em; }
+.oedge-tbody tr, .oedge-thead tr {height: 2em; }
+.oedge-thead th {text-align: left;}
+
+
+/*#grid-tbl-div td, #grid-tbl-div th {padding: .35em; }*/

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/external/pepper-grinder/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/oedge.css">
+        <script src="js/external/jquery.js"></script>
+        <script src="js/external/dygraph-combined.js"></script>
+        <script src="js/external/jquery-ui-1.10.4.custom.js"></script>
+        <script src="js/external/jquery.ui.touch-punch.js"></script>
+        <script src="js/mydygraph.js"></script>
+        <script src="js/mytable.js"></script>
+        <script src="js/data.js"></script>
+        <script src="js/prices.js"></script>
+        <script src="js/day.js"></script>
+        <script src="js/numeric.js"></script>
+        <script src="js/blackscholes.js"></script>
+        <script src="js/stock.js"></script>
+        <script src="js/position_mgr.js"></script>
+        <script src="js/strategy.js"></script>
+        <script src="js/onload.js"></script>
+    </head>
+    
+    <body class="clearfix">
+        <div id="container-left">
+            <div id='delete-dialog-div'></div>
+            <div id='position-dialog-div'>
+                <form>
+                    <fieldset>
+                        <div>
+                            <label for='f'>Type: </label>
+                            <select name='select' id='f'>
+                                <option value='Buy Call'>Buy Call</option>
+                                <option value='Sell Call'>Sell Call</option>
+                                <option value='Buy Put'>Buy Put</option>
+                                <option value='Sell Put'>Sell Put</option>
+                                <option value='Buy Stock'>Buy Stock</option>
+                                <option value='Sell Stock'>Sell Stock</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for='pp'>Purchase Price: </label> 
+                            <input type='text' id='pp' value='1.5'/>
+                        </div>
+
+                        <div>
+                            <label for='q'>Quantity: </label> 
+                            <input type='text' id='q' value='1'/>             
+                        </div>
+
+                        <div>
+                            <label for='x'>Strike: </label> 
+                            <input type='text' id='x' value='25'/>
+                        </div>
+
+                        <div>
+                            <label for='u'>Underlying: </label> 
+                            <input type='text' id='u' value='25'/>
+                        </div>
+
+                        <div>
+                            <label for='t'>Exp Date: </label> 
+                            <input type='text' id='t' title='Select date from picker' value='08/15/2014'/>
+                        </div>
+
+                        <div>
+                            <label for='r'>Risk Free Rate: </label> 
+                            <input type='text' id='r' value='0.015'/>
+                        </div>
+                    </fieldset>
+                </form>
+                <div id='tooltip'></div>
+            </div>  <!--end position-dialog-div-->
+
+            <div id="tabs-pos" class="clearfix" >
+                <ul>
+                    <li><a href="#tabs-pos-1">Positions</a></li>
+                </ul>
+                
+                <div id="tabs-pos-1">
+                    <div id="position-tbl-div"></div>
+                    <a id='add-position' href='#'>Add</a> |
+                    <a id='remove-all-positions' href='#'>Remove All</a>
+                </div>
+            </div> <!--End tabs-pos-->
+
+            <div id="grid-div" class="box left">
+                <div id="grid-tbl-div"></div>
+            </div>
+
+        </div> <!--end container-left-->
+
+        <div id="container-right">
+                <div id="tabs-ctrl" class="clearfix" >
+                    <ul>
+                        <li><a href="#tabs-ctrl-1">Days Until Expiration</a></li>
+                        <li><a href="#tabs-ctrl-2">Price Range</a></li>
+                    </ul>
+                    
+                    <div id="tabs-ctrl-1">
+                        <div id="slider-day" class="sliders"></div>
+                        <input id="spinner-day" class="spinners" title="Days until expiration" value="0">   
+                    </div>
+
+                    <div id="tabs-ctrl-2">
+                        <div id="slider-prices" class="sliders" class="sliders"></div>
+                        <input id="spinner-obs" class="spinners" title="Number of observations" value="15">
+                        <input id="spinner-start" class="spinners" title="Underlying price start" value="20.67">
+                        <input id="spinner-end" class="spinners" title="Underlying price end" value="42.67">
+                    </div>
+                
+                </div>
+
+            <div id="chart-div-container" class="box right">
+                <div id="chart-div"></div>
+            </div>
+        </div> <!--end container-right-->   
+    </body>
+</html>
