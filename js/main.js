@@ -1,5 +1,5 @@
 /**
- * onload.js
+ * main.js
  *
  * This script defines the actions to be performed when the
  * application first loads.
