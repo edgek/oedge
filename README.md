@@ -1,8 +1,8 @@
 oedge
 =====
 
-This is a test project for a web app that allows users to visualize option trading strategies. One can enter positions in any configuration and then visualize profitability scenarios in a data grid and chart. Slider and spinner controls allow changing of parameters to see how it affects strategy outcome.
+This is a test project for an app that allows users to visualize option trading strategies. It is written in JavaScript, HTML, and CSS. View screenshot.jpg in this repository for a screenshot.
 
-A screenshot of the app is posted to edgek/oedge/screenshot.jpg
+A user can enter positions in any configuration and then visualize profitability scenarios in a data grid and chart. Slider and spinner controls allow changing of parameters to see how it affects strategy outcome.
 
 More details to be posted...
